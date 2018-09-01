@@ -1,6 +1,6 @@
 table users:
 
-create table users(
+create table user_master(
 	user_id varchar(4) primary key,
 	password varchar(7),
 	role varchar(10),
