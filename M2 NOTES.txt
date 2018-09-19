@@ -1,0 +1,165 @@
+inside an interface-public static final
+== checks for object reference address.
+
+string A="chandan"
+string B="chandan"
+
+A==B is valid
+
+default access specifier is always for the same package.
+
+we can invoke the base class constructtor using
+
+string name="chandan"
+name="shyam"
+
+2objects 1 ref var
+
+What are the object class methods? (NOTIFY,NOTIFY ALL,CLONE,HASH CODE)(STATIC METHODS ARE STORED IN HEAP!)
+                                   ( REFERENCE METHODS ARE STORED IN STACK)
+
+The Methods of java.lang.Object
+public Object()
+ getClass()
+public int hashCode()
+public boolean equals(Object obj)
+protected Object clone() throws CloneNotSupportedException.
+public String toString()
+public final void notify()
+public final void notifyAll()
+
+static methods stored in heap
+ref variables stored in stack
+
+
+garbage collection questions 
+
+learn the concepts of java
+learn about multi threading
+
+jdk and jre
+
+***
+3 diff layers
+class loaderThe Java Classloader is a part of the Java Runtime Environment that dynamically 
+loads Java classes into the Java Virtual Machine. Usually classes are only loaded on demand 
+-----byte code execution
+***
+jit-just in time interpreter converts byte code to binary code
+byte code verifier makes sure of security 
+class loader-heap ad stack
+method to explicitly incvoke garbage collector-system.gc
+finalize()-clear 
+
+
+byte num1=12
+byte num2=40
+
+byte=num1+num2(wrong becasue whenever 2 values are added, it should always be an int)
+default is not compulsory in java
+
+responsibilty for keeping classes from diff server separate-class loader
+
+byte code verifier ensures byte code...The bytecode verifier acts as a sort of gatekeeper: it ensures that code passed to the 
+Java interpreter is in a fit state to be executed and can run without fear of breaking the Java interpreter.
+abstract class cannot be instantiated 
+
+interface variables are public static and final by default
+in java char=2 bytes(unicode )
+in java primitives are always passed by value and not reference 
+
+string str (null) 
+str.lentgh(null pointer xception)
+
+java enums are constants (true)
+enum is for universal constant types
+java enum is a special  kind of java class
+java enum allwos to define a new method (true)
+string buffer object is immitable(false)
+
+new string "tanmay"
+instance of string(true)
+
+default value of float and double 0.0
+
+any litearal is by default int
+
+setter return type is void 
+
+final modifier is with local variable
+
+what are the wrapper classes we have 
+do we have a wrapper calss called sort
+which method helps to get current date and time-now()
+instant class gives time stamp-long date
+local date-date
+local time-time
+which method helps to create a custom retun type 
+of()
+
+of() is local return type
+
+when does automatic type conversion happens-prototype conversion(type casting)
+
+serialization in java
+Serialization is a mechanism of converting the state of an object into a byte stream.
+
+A Java virtual machine (JVM) is a virtual machine that enables a computer to run Java programs as well as 
+programs written in other languages and compiled to Java bytecode.
+
+reference this is never passed to static method-true
+which method helps to distruct a method
+can we apply this a super in your constructor-yes
+
+which operator is used to add 2 different strings
+which class relies on the sub class
+
+in java variables can start with _,variable or $
+
+equals and hash code are final(false)
+
+******************************************************************************************************************
+exception
+
+the super most base class in exception is throwable
+check exception-(In Java exceptions under Error and RuntimeException classes are unchecked exceptions, everything else under throwable is checked
+
+EXCEPTION CLASS IS BY DEFAULT CHECKED 
+error class is by default unchecked 
+
+are the exceptions that are checked at compile time. If some code within a method throws a checked exception, then the method must either 
+handle the exception or it must specify the exception using throws keyword.
+
+
+are the exceptions that are not checked at compiled time. In C++, all exceptions are unchecked, so it is not forced by the compiler to either handle or 
+specify the exception. It is up to the programmers to be civilized, and specify or catch the exceptions.
+
+class not found exception ins checked exception
+
+
+In Java exceptions under Error and RuntimeException classes are unchecked exceptions, everything else under throwable is checked.
+
+array index out of bounds string exceotions-uncehcked
+
+try block-try must need catch or finally
+catch-to handle array index out of bound,io exception, exception,throwable
+all exceptions are throable 
+base class and derived class cannot stay in a single catch block
+finally block 
+if we say system.exit() then the object is delted from the jvm
+
+in the overridden concept
+
+which type of jdbc layer is faster and does not  
+driver manager is the only one class
+learn qustions related to prepared statement etc
+which collection stores a key value pair-map
+which collection stores a key value pair without duplicate-set
+    and sorted-sorted map
+collection to store dulipcate values but not sychronized-array list
+which collection interface will help to store the duplicate value-list
+which list interface class is sychronized-vector
+which connection component does not accept duplicate value-hash set
+no duplicate in fifo manner-hash set
+which interface will help to sort your data-comparable
+

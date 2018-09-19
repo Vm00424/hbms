@@ -1,0 +1,24 @@
+get is used to retreive from a server
+post is used to pass info to the server
+
+a server is a system that responds to the requests accross computer networks
+to provide a network service
+
+rules for html 5 tages-
+tags and attributes must be case insensitive
+attributes do not need to be quoted
+
+base element specifies a base url for all links in the page
+the meta tag provides info about the meta data such as description and keyword 
+for search engine
+
+emphasis-highlights specific area
+
+<span>-the html span tag is used for grouping and applying styles to inline elements
+
+
+block level elements separate contents into blocks
+
+<td>-defines cell data
+row span column span-merge in excel
+

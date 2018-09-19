@@ -1,0 +1,219 @@
+a collection is an object that groups multiple elements into a single container
+
+collections are used to store retireve and transmit objects from one method to another
+
+collection interfaces
+
+collection-
+a basic interface that defines
+
+collection implementations:
+
+hash set- unsorted unordered list
+it uses the hash code of the object being inserted 
+the better the hash code impl the better implimentation we will get.
+use this class when you want to implement a collection with no duplicates 
+
+linked hash set- is a hash set where the order is the order of insertion
+
+tree set is same as linked hash set but the sorting is done.
+tree set is not synchronized
+
+hash map gives you unsorted unordered map
+        maintains key and value
+
+
+autoboxing with collections
+
+boxing-conversion of primitive values to objects of corresponding wrapper class
+unboxing-opposite
+
+
+primitve values and the correspondin wrapper classes can be used interchangably 
+this is called automatic boxing
+
+
+vector class implements a growable array of objects.
+
+vectors are less secure in multithreaded environment
+vectors can only hold objects and not primitive types.
+
+
+iterator is an object that allows you to iterate over a collection
+
+The enhanced for loop was introduced in Java 5 as a simpler way to iterate through all the elements of a Collection
+
+comparator interface can be used to sort the elements of the array or list in the required way.
+
+
+the comparator interface requires 2 methods-
+
+compare()-compares two elements for order.
+
+equals()-tests whether an object equals invoking comparator.
+
+hashmap uses hash code value of an object to determine how an object should be stored in the coll.
+
+hashtable- is synchronized and stores key value pair.
+vector and hash table implementation is costly.
+************************************************************************************************************
+generics:
+generics is a mechanism by which a single place of code can manipulate many 
+different data types without explicitly having a separate entity for each data type.
+
+
+*********************************
+File Io
+
+a program uses input stream objecet to read data from  a source
+a program uses output stream to write object data to a destination.
+
+stream is an abstraction that consumes or produces data linked to  a source 
+or destination.
+
+different types of Io streams
+:
+byte stream handles raw binary data
+charecter stream 
+
+optimize input and output with reduced number of calls to the native api
+data stream
+object stream
+
+methods of input stream class
+
+close()-closes this input stream and releases any system resource associated 
+with the stream.
+
+int read()-
+reads the next byte of data from the input stream 
+
+int read(byte[] b)
+-
+reads some no of bytes from the input stream and stores in buffer b
+
+int read(byte[] b, int off,int len)
+-reads upto len bytes of data from the input stream
+*************************
+methods of output stream class-
+close()
+closes the output stream 
+
+flush()-
+flushes the output stream and forces any buffered op bytes to be written out.
+
+**********************
+
+junit-
+
+unit testing
+the process of testing indv subprog and subroutines
+
+
+
+write(byte[]b)-write b.lenght bytes from a specified byte array
+tdd-write test cases before app functionality
+
+
+
+
+
+write(int b)-write the specified byte to this output stream
+
+
+
+object serialization-
+process to read and write objects to and from a raw data stream 
+
+
+assert statements in j unit-
+
+fail(String)
+assertTrue(boolean)
+assertEquals()
+assertNull()
+assertNotNull()
+assertSame()
+assertNotSame()
+assertThat()
+******************************************
+property files
+used to store the configuation parameters
+each parameter is stored as a key value pair
+java.util.properties
+comments begin with #
+
+
+categories of files
+
+user specific properties:
+used to configure the apllication
+
+system properties
+maintain its own config
+current user current version of the java runtime
+
+setting properties:
+A USERS interaction with an application during its execution may impact 
+property settigns,they are saved to the properties object 
+to change the properties we use setProperty()
+
+getting property information-
+**********************************************
+jdbc allows us to construct sql statements and embed them inside java api calls
+
+types of jdbc drivers-
+
+jdbc-odbc drivers:
+ type 1 drivers act as a bridge between jdbc and odbc 
+jdbc odbc bridge provides jdbc access using standard odbc drivers
+
+java to native API:
+type 2 drivers use the Java Native Interface to make calls to a local database Library API.
+THIS DRIVER CONVERTS THE JDBC CALLS INTO A DATABASE SPECIFIC CALL
+
+java to network protocol:
+type 3 drivers are pure java drivers that use a proprietary nwetwork protocol
+to communicate with jdbc middleware on the server.
+they are the most flexible
+
+
+java to database protocol :
+they are pure java drivers
+
+jdbc data access:
+
+STEP1:
+IMPORT JAVA.SQL AND JAVAX.SQL
+
+sTEP2:
+REGISTER THE DRIVER:
+DriverManager.registerDFriver("");
+
+STEP3:
+ESTABLISH the connection with the database using registered driver
+
+Step4:
+Once connection is established with the db statement object can be used to execute diff 
+sql queries.
+
+Step5:
+retrieve data from table.
+
+step6:
+closing resources
+
+transaction:
+
+A transaction is a set of one or more statements that are executed together 
+as a unit.
+so either all are executed or none.
+
+connection methods for transaction management:
+setAuto commit()
+commit()
+roll back()
+setSavePoint()
+releaseSavePoint()
+
+
